@@ -1,0 +1,27 @@
+.model small ; model pamiêci
+
+.stack 100h ; gdzie zaczyna siê stos programu w pamiêci
+
+.code ; zaczyna siê sekcja z programem
+Start:
+
+MOV AH,1 ; funkcja DOS odczytuj¹ca znaki z klawiatury
+INT 21H ; wezwij DOS w celu wykonania tej funkcji (odczytaj znak)
+MOV DL,AL ; przenieœ znak (uzyskany z funkcji nr 1) z AL do DL
+
+MOV AH,1 ; funkcja DOS odczytuj¹ca znaki z klawiatury
+INT 21H ; wezwij DOS w celu wykonania tej funkcji (odczytaj znak)
+MOV CL,AL ; przenieœ znak (uzyskany z funkcji nr 1) z AL do DL
+SUB CL,48
+MOV CH,0
+
+Petla:
+	MOV AH,2
+	INT 21H
+
+	loop Petla
+
+MOV AH, 4Ch ; kod funkcji DOS do zakoñczenia programu
+INT 21h ; wezwij DOS w celu wykonania tej funkcji
+
+end 

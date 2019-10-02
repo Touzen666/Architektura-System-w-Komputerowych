@@ -1,0 +1,13 @@
+1. Napisz program wypisuj¹cy na ekranie znaki: H e j.
+2. Napisz program wczytuj¹cy z klawiatury znak. Niech go nastêpnie wypisze na ekranie.
+3. Napisz program do obliczania pola kwadratu/ko³a.
+
+4. Napisz procedurê do obliczania pola kwadratu/ko³a i j¹ uruchom.
+5. Napisz makro do wypisywania tekstu "Witaj".
+6. Napisz makro do pobierania znaku z klawiatury.
+7. Napisz procedurê do wypisania 'drzewka':
+   *
+  ***
+ *****
+*******
+

@@ -1,0 +1,57 @@
+.model small ; model pamiêci
+
+.stack 100h ; gdzie zaczyna siê stos programu w pamiêci
+
+.code ; zaczyna siê sekcja z programem
+Start:
+	mov cx, 5
+
+Linia:
+	mov ax,cx
+
+	push cx
+		
+	mov cx, ax
+Spacja:
+
+	MOV AH,2 ; funkcja DOS wyœwietla znaki
+	MOV DL,' ' ; S jest znakiem do wyœwietlenia
+	INT 21H ; wezwij DOS w celu wykonania tej funkcji
+
+	loop Spacja
+
+	pop cx
+	mov ax, cx
+	mov bx,6 
+	sub bx,ax
+	push cx
+	mov cx, bx
+	mov dx, cx
+	dec dx
+	add cx, dx	
+Gwiazdka:
+
+	MOV AH,2 ; funkcja DOS wyœwietla znaki
+	MOV DL,'*' ; S jest znakiem do wyœwietlenia
+	INT 21H ; wezwij DOS w celu wykonania tej funkcji
+
+	loop Gwiazdka
+
+
+	MOV AH,2 ; funkcja DOS wyœwietla znaki
+	MOV DL,0Dh ; S jest znakiem do wyœwietlenia
+	INT 21H ; wezwij DOS w celu wykonania tej funkcji
+
+	MOV AH,2 ; funkcja DOS wyœwietla znaki
+	MOV DL,0Ah ; S jest znakiem do wyœwietlenia
+	INT 21H ; wezwij DOS w celu wykonania tej funkcji
+
+	pop cx
+
+	loop Linia
+
+
+MOV AH, 4Ch ; kod funkcji DOS do zakoñczenia programu
+INT 21h ; wezwij DOS w celu wykonania tej funkcji
+
+end ; Koniec kodu

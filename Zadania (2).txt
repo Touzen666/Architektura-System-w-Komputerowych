@@ -1,0 +1,83 @@
+0. Liczba ca³kowita, Komp -> Cz³. (dwójkowy -> dziesiêtny)
+
+110101(2) => ? (10)
+
+1*2^5 +1*2^4 + 0*2^3 + 1*2^2 + 0*2^1 + 1*2^0 =1*32+1*16+0*8+1*4+0*2+1*1=32+16+0+4+0+1=53(10)
+
+
+1. Przeliczanie z systemu czwórkowego na dziesiêtny
+
+2031 (4) = ? (10)
+
+2*4^3 + 0*4^2 + 3*4^1 + 1*4^0 = 
+= 2*64 + 0*16 + 3*4 + 1*1 = 
+= 128 + 0 + 12 + 1 = 141(10)
+
+
+2. Przeliczanie liczby w systemie dziesiêtnym na dwójkowy
+
+50 (10)  = ? (2)
+
+50/2 = 25 ca³oœci i 0 reszty   ^
+25/2 = 12 ca³oœci i 1 reszty   |
+12/2= 6 | 0                    |
+6/2 = 3 | 0                    |  
+3 = 1 | 1                      |
+1 = 0 | 1                      |
+
+50 (10) = 110010 (2)
+
+Przyk³ad 2:
+72 (10) = ? (5)
+
+72/5 = 14 | 2          ^
+14/5 = 2  | 4          |
+2/5  = 0  | 2          |
+72(10) = 242 (5)
+
+Zad.6.
+0.25 (10) = ?? (2)
+
+0.25 * 2 = 0.5 => 
+Je¿eli (wynik=0.5 >= 1) 
+  to rozwiniêcie =  1
+  w przeciwnym wypadku = 0   <- to jest wynik pierwszego rozwiniêcia
+0.5 * 2 = 1 > Je¿eli(1>=1) => rozwiniêcie = 1
+1 - 1 = 0 <- Koniec obliczeñ
+
+0.25(10) = rozwiniêcie dwójkowe 01(2)
+
+Przyk³ad.2.
+0.625(10) = ?? (2)
+
+0,625 * 2 = 1,25        =>  1
+1,25-1 = 0,25 * 2 = 0,5 =>  0
+0,5 * 2 = 1             =>  1
+1-1=0 ->Koniec
+
+0,625(10) = 101(2)
+
+
+Zad.Podobne do 9.
+
+(znak)(bity ca³kowite=4bity) (bity u³amkowe=4bity)
+3.75(10) = 0 0011 1100
+
+3(10) => ??(2)
+3/2 = 1 | 1
+1/2 = 0 | 1
+3(10)=11(2)
+
+0.75(10) = ?? (2)
+0.75*2 = 1.5          => 1
+1.5-1=0.5 * 2 = 1     => 1
+1-1=0 -> Koniec
+0.75(10) = 11(2)
+
+Zadania.
+Zad.1, 11111011100(2), 7DC(16) => ??(10)
+Zad.3. 110(10) => ?(2)
+Zad.4. 2012(10) => ?(8)
+Zad.6. 0.75(10) => ?(2)
+Zad.7. 0.1(10) => ?(2) do pi¹tego rozwiniêcia (10110)
+Zad.9. 6.125(10) = ?? (2) 
